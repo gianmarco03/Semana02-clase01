@@ -66,6 +66,13 @@
     margin: 0;
 }
 
+.article__card-description::after{
+    content: "🥗";
+}
+
+.article__card-description::before{
+    content: "🥗";
+}
 
 .footer{
     display: flex;
@@ -91,6 +98,12 @@
 .footer-nav__link{
     display: flex;
     width: 1.5rem;
+    transition: all 1.25s;
+}
+
+.footer-nav__link:hover {
+    filter: brightness(150%);
+    transform: scale(1.25) rotate(360deg);
 }
 
 .footer-nav__link-image {
